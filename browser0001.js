@@ -11,15 +11,15 @@
 // fPrintIfNav
 // -----------------------------------------------------------------------
 function fCheckBrowser() {
- 	this.ver = navigator.appVersion;
- 	this.dom = document.getElementById?1:0;
- 	this.ie5 = (this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
- 	this.ie4 = (document.all && !this.dom)?1:0;
- 	this.ns5 = (this.dom && parseInt(this.ver) >= 5) ?1:0;
- 	this.ns4 = (document.layers && !this.dom)?1:0;
- 	this.brw = (this.ie5 || this.ie4 || this.ns4 || this.ns5);
- 	this.ieoth = (!this.ie4 && !this.ie5 && navigator.appName.indexOf("Microsoft")>-1 && navigator.appName.indexOf("Internet")>-1 && navigator.appName.indexOf("Explorer")>-1)?1:0;
- 	return this;
+  this.ver = navigator.appVersion;
+  this.dom = document.getElementById?1:0;
+  this.ie5 = (this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+  this.ie4 = (document.all && !this.dom)?1:0;
+  this.ns5 = (this.dom && parseInt(this.ver) >= 5) ?1:0;
+  this.ns4 = (document.layers && !this.dom)?1:0;
+  this.brw = (this.ie5 || this.ie4 || this.ns4 || this.ns5);
+  this.ieoth = (!this.ie4 && !this.ie5 && navigator.appName.indexOf("Microsoft")>-1 && navigator.appName.indexOf("Internet")>-1 && navigator.appName.indexOf("Explorer")>-1)?1:0;
+  return this;
 }
 // -----------------------------------------------------------------------
 function thisNavigator() {
