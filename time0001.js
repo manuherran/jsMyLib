@@ -34,7 +34,3 @@ function fEngLongTodayDate() {
   return (listaDays[day] + ", " + currentTime.getDate() + " " + listaMonths[mon] + " " + year);
 }
 // -----------------------------------------------------------------------
-
-
-
-
